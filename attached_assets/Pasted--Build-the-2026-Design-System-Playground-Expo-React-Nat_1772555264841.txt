@@ -1,0 +1,325 @@
+ Build the 2026 Design System Playground (Expo + React Native)
+You are a chief architect with 20+ years of experience in design systems, mobile infrastructure, and React Native. Your task is to generate the complete source code for the 2026 Design System Playground as described in the blueprint below. The final project must be production‑grade, fully typed, accessible, and include all governance automation. It should rival internal tools at Meta, Shopify, and Airbnb.
+
+Important guidelines:
+
+Use Expo SDK 52, React Native 0.76 (New Architecture), TypeScript 5.5+, NativeWind 4, Zustand 5 + MMKV, Reanimated 4, Gesture Handler 2, Skia 1.5, and Expo Router 4.
+
+Every visual property must come from design tokens—no hardcoded colors, spacing, radii, shadows, or motion values.
+
+All components must forward refs, accept and forward accessibility props, and be typed with strict TypeScript (no any).
+
+Include automated governance: token generation scripts, validation scripts, and GitHub Actions workflows.
+
+Respect user motion preferences (useReducedMotion).
+
+Provide a playground app (Expo Router screens) showcasing tokens, components, motion, theme switching, and an accessibility panel.
+
+Include a hidden debug overlay (triple‑tap to open) with token inspector and performance monitor.
+
+Write a mini‑app (Login, Dashboard, Settings) that simulates real adoption and displays a benchmark screen.
+
+Add Storybook 7 for component documentation.
+
+Write comprehensive README with system philosophy, architecture diagram, setup instructions, and live Expo QR code (via EAS Update).
+
+All scripts must be in TypeScript and placed in /scripts.
+
+All CI/CD workflows must be in .github/workflows/.
+
+Folder Structure (Generate Exactly)
+text
+design-system-playground/
+├── .storybook/
+├── .github/
+│   └── workflows/
+│       ├── ci.yml
+│       └── theme-isolation.yml
+├── app/                                # Expo Router screens
+├── scripts/
+│   ├── generateTokens.ts
+│   ├── validateTokenIntegrity.ts
+│   ├── validateContrast.ts
+│   └── buildTailwindTheme.ts
+├── docs/
+│   ├── system-contract.md
+│   └── evolution-strategy.md
+├── src/
+│   ├── core/
+│   │   ├── tokens/
+│   │   │   ├── schema/
+│   │   │   │   ├── tokens.schema.json
+│   │   │   │   ├── base.json
+│   │   │   │   ├── light.json
+│   │   │   │   ├── dark.json
+│   │   │   │   ├── amoled.json
+│   │   │   │   ├── glass.json
+│   │   │   │   └── highContrast.json
+│   │   │   ├── generated/
+│   │   │   │   ├── colors.ts
+│   │   │   │   ├── typography.ts
+│   │   │   │   ├── spacing.ts
+│   │   │   │   ├── radii.ts
+│   │   │   │   ├── shadows.ts
+│   │   │   │   ├── motion.ts
+│   │   │   │   └── index.ts
+│   │   │   └── README.md
+│   │   ├── theme/
+│   │   │   ├── ThemeProvider.tsx
+│   │   │   ├── useTheme.ts
+│   │   │   └── themes/
+│   │   │       ├── light.ts
+│   │   │       ├── dark.ts
+│   │   │       ├── amoled.ts
+│   │   │       ├── glass.ts
+│   │   │       └── highContrast.ts
+│   │   ├── motion/
+│   │   │   ├── primitives/
+│   │   │   │   ├── FadeIn.tsx
+│   │   │   │   ├── SlideUp.tsx
+│   │   │   │   ├── ScalePress.tsx
+│   │   │   │   ├── LayoutTransition.tsx
+│   │   │   │   └── SharedElementTransition.tsx
+│   │   │   ├── useMotion.ts
+│   │   │   └── presets.ts
+│   │   ├── hooks/
+│   │   │   ├── useAccessibility.ts
+│   │   │   ├── useHaptic.ts
+│   │   │   └── useThemeSwitch.ts
+│   │   └── providers/
+│   │       ├── AccessibilityProvider.tsx
+│   │       └── MotionProvider.tsx
+│   ├── components/
+│   │   ├── primitives/
+│   │   │   ├── Text/
+│   │   │   ├── Box/
+│   │   │   ├── PressableBase/
+│   │   │   └── InputBase/
+│   │   ├── composites/
+│   │   │   ├── Button/
+│   │   │   │   ├── Button.tsx
+│   │   │   │   ├── Button.types.ts
+│   │   │   │   ├── Button.styles.ts
+│   │   │   │   ├── Button.stories.tsx
+│   │   │   │   └── __tests__/
+│   │   │   ├── Input/
+│   │   │   ├── Card/
+│   │   │   ├── Badge/
+│   │   │   ├── Avatar/
+│   │   │   ├── Toggle/
+│   │   │   ├── Modal/
+│   │   │   ├── BottomSheet/
+│   │   │   ├── Toast/
+│   │   │   └── Skeleton/
+│   │   └── layouts/
+│   │       ├── Row/
+│   │       ├── Column/
+│   │       └── Container/
+│   ├── playground/
+│   │   ├── typography/
+│   │   ├── colors/
+│   │   ├── buttons/
+│   │   ├── cards/
+│   │   ├── inputs/
+│   │   ├── animations/
+│   │   ├── theme-switcher/
+│   │   ├── accessibility/
+│   │   └── mini-app/
+│   │       ├── LoginScreen.tsx
+│   │       ├── DashboardScreen.tsx
+│   │       ├── SettingsScreen.tsx
+│   │       └── MetricsBenchmark.tsx
+│   ├── dev/
+│   │   ├── DebugOverlay.tsx
+│   │   ├── TokenInspector.tsx
+│   │   └── PerformanceMonitor.tsx
+│   └── utils/
+│       ├── colorManipulator.ts
+│       ├── animationHelpers.ts
+│       └── test-utils.tsx
+├── __tests__/
+├── package.json
+├── tailwind.config.ts
+└── README.md
+Core Requirements
+1. Design Tokens
+Create JSON schema (tokens.schema.json) defining color, typography, spacing, radii, shadows, motion.
+
+Provide theme JSON files: base.json (shared), light.json, dark.json, amoled.json, glass.json, highContrast.json.
+
+Write generateTokens.ts that reads these JSON files and outputs TypeScript files (colors.ts, etc.) and a README.md with auto‑generated documentation.
+
+Write validateTokenIntegrity.ts that:
+
+Ensures every semantic token exists across all themes.
+
+Detects duplicate keys, missing dark‑mode overrides, unused tokens.
+
+Validates contrast ratios for all text/background pairs (using chroma-js).
+
+Write validateContrast.ts (called in CI) to check WCAG 2.1 AA compliance.
+
+Write buildTailwindTheme.ts to convert tokens into a tailwind.config.ts that NativeWind can consume.
+
+2. Theme Engine
+ThemeProvider.tsx using React Context + Zustand store (with MMKV persistence) to manage active theme and accent color.
+
+useTheme.ts hook to access current theme tokens.
+
+Define five theme objects (light.ts, etc.) that import generated token constants.
+
+Support dynamic accent color (user picks a hue, generate palette via colorManipulator.ts).
+
+Animate theme transitions with Reanimated (cross‑fade).
+
+System theme detection and persistence.
+
+3. Motion System
+useMotion.ts hook that respects useReducedMotion().
+
+Animation primitives (FadeIn, SlideUp, ScalePress, LayoutTransition, SharedElementTransition) built with Reanimated 4.
+
+presets.ts with common animation configurations.
+
+Integrate haptic feedback (useHaptic.ts).
+
+Ensure all animations can be disabled via reduced motion.
+
+4. Component Primitives (Unstyled)
+Text: accepts typography token keys, forwards ref, supports max font size multiplier.
+
+Box: a simple View with token‑based spacing and layout props.
+
+PressableBase: handles press states, ripple (on Android), hover (on web), and accessibility.
+
+InputBase: unstyled text input with focus management and accessibility.
+
+5. Composite Components (Styled)
+At minimum, fully implement Button and Card as examples. Provide scaffolding for others (Input, Badge, Avatar, Toggle, Modal, BottomSheet, Toast, Skeleton) with proper token usage, types, stories, and tests.
+
+Each composite component must:
+
+Accept variant, size, disabled, className.
+
+Forward ref.
+
+Accept all accessibility props (accessibilityLabel, role, state, etc.).
+
+Derive styles from tokens only (use useTheme or generated constants).
+
+Include a Storybook story and unit tests.
+
+Pass contrast validation.
+
+6. Playground Screens (Expo Router)
+Create screens under app/ that import from src/playground/:
+
+index.tsx → main landing with navigation to each section.
+
+typography.tsx → show all text styles.
+
+colors.tsx → show color palette.
+
+buttons.tsx → interactive button showcase.
+
+cards.tsx → card variants.
+
+inputs.tsx → form inputs.
+
+animations.tsx → motion primitives playground.
+
+theme-switcher.tsx → theme selector + accent color picker.
+
+accessibility.tsx → screen reader tests, dynamic type, contrast tools.
+
+mini-app/ → Login, Dashboard, Settings screens that use components.
+
+mini-app/metrics.tsx → benchmark screen (component count, render time, theme switch latency, FPS).
+
+7. Developer Tools
+DebugOverlay.tsx: hidden overlay (triple‑tap to open) that shows layout borders, re‑render counter, and buttons to open TokenInspector and PerformanceMonitor.
+
+TokenInspector.tsx: lists all current theme tokens and their values.
+
+PerformanceMonitor.tsx: displays FPS, JS thread usage, and render times (using react-native-performance).
+
+8. Governance & Automation
+GitHub Actions:
+
+ci.yml: runs lint, tests, token validation, contrast checks on PR.
+
+theme-isolation.yml: runs test suite in light, dark, and high contrast modes (simulate by changing theme in setup).
+
+Scripts:
+
+validateTokenIntegrity.ts (called in CI).
+
+validateContrast.ts (called in CI).
+
+Bundle analysis: use expo-analyzer to enforce initial load < 2 MB (fail CI if exceeded).
+
+9. Performance Guardrails
+In composite components, never use inline style objects.
+
+Use FlashList for any list longer than 20 items.
+
+Implement React.memo strategically.
+
+Lazy load playground screens.
+
+Include PerformanceMonitor in dev mode.
+
+10. Accessibility
+Every component must be tested with screen readers (VoiceOver/TalkBack) – include notes in README.
+
+Set maxFontSizeMultiplier on all text elements.
+
+Ensure touch targets ≥ 44pt.
+
+Use accessibilityHint where needed.
+
+Provide AccessibilityProvider that announces theme changes, etc.
+
+11. Documentation
+README.md: project overview, philosophy, tech stack badges, architecture diagram, setup instructions, live Expo QR code (via EAS Update), and link to Storybook.
+
+docs/system-contract.md: detailed component API contract.
+
+docs/evolution-strategy.md: future roadmap (web support, Figma plugin, open source, monorepo).
+
+12. Storybook
+Configure Storybook 7 for React Native (using @storybook/react-native).
+
+Auto‑generate stories for all composite components.
+
+Deploy to GitHub Pages (optional, but include config).
+
+13. Testing
+Jest + React Native Testing Library for unit tests.
+
+Detox for E2E (optional, but include basic setup).
+
+Visual regression testing placeholder.
+
+14. Versioning
+Set version in package.json to 0.1.0.
+
+Follow semantic versioning (major for token breaking changes, minor for new components, patch for fixes).
+
+Additional Expectations
+Code must be impeccably organized, with clear comments where necessary.
+
+All asynchronous operations must be handled gracefully (loading states, error boundaries).
+
+Use absolute imports (configure tsconfig.json with "baseUrl": "./" and "paths").
+
+Include .env.example for any future environment variables.
+
+Provide eas.json for EAS Build and EAS Update (with development, preview, production profiles).
+
+The project should be immediately runnable after npm install and npx expo start.
+
+Now, generate the entire project. Start by scaffolding the folder structure and all configuration files (package.json, tsconfig.json, tailwind.config.ts, eas.json, .eslintrc.js, .prettierrc, commitlint.config.js, etc.). Then populate every file with production‑ready code. Remember: you are acting as a chief architect—deliver a system that is not only functional but also a masterpiece of engineering governance.
+
+Begin.
+
