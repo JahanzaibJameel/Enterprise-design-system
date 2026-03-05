@@ -1,0 +1,51 @@
+name: Token Governance
+
+on:
+  push:
+    paths:
+      - 'tokens/**'
+      - 'scripts/**'
+  pull_request:
+    paths:
+      - 'tokens/**'
+      - 'scripts/**'
+
+jobs:
+  token-validation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci --legacy-peer-deps
+      
+    - name: Validate token structure
+      run: npm run validate-tokens
+      
+    - name: Check for deprecated tokens
+      run: |
+        if [ -f "tokens/deprecated.json" ]; then
+          echo "🔍 Checking for deprecated token usage..."
+          node scripts/check-deprecated-tokens.mjs
+        else
+          echo "✅ No deprecated tokens defined"
+        fi
+        
+    - name: Generate token documentation
+      run: |
+        node scripts/generate-token-docs.mjs
+        echo "📚 Token documentation generated"
+        
+    - name: Upload token docs
+      uses: actions/upload-artifact@v3
+      with:
+        name: token-documentation
+        path: docs/tokens.md

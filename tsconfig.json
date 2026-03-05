@@ -3,6 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "strict": true,
+    "lib": ["ES2017", "DOM"],
+    "jsx": "react-jsx",
+    "target": "ES2017",
     "paths": {
       "@/*": [
         "./*"

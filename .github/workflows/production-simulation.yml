@@ -1,0 +1,99 @@
+name: Production Build Simulation
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  production-simulation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci --legacy-peer-deps
+      
+    - name: Production build
+      run: |
+        echo "🏭 Simulating production build..."
+        
+        # Build for all platforms
+        npx expo export --platform web --output-dir dist-web
+        npx expo export --platform android --output-dir dist-android
+        npx expo export --platform ios --output-dir dist-ios
+        
+        echo "✅ Production builds completed"
+        
+    - name: Bundle analysis
+      run: |
+        echo "📊 Analyzing bundle sizes..."
+        
+        # Web bundle analysis
+        WEB_SIZE=$(du -sk dist-web | awk '{print $1}')
+        echo "Web bundle: ${WEB_SIZE}KB"
+        
+        # Find largest files
+        echo "🔍 Largest files in web bundle:"
+        find dist-web -type f -exec du -k {} + | sort -nr | head -10
+        
+        # Check for bundle bloat
+        if [ "$WEB_SIZE" -gt 1024 ]; then
+          echo "⚠️ Web bundle is large: ${WEB_SIZE}KB > 1MB"
+        fi
+        
+        # Generate bundle report
+        npx webpack-bundle-analyzer dist-web/static/js/*.js --mode=json --report=bundle-report.json
+        
+    - name: Performance simulation
+      run: |
+        echo "⚡ Running performance simulation..."
+        
+        # Install Lighthouse CI
+        npm install -g @lhci/cli
+        
+        # Start production server
+        npx expo export --platform web --output-dir dist-web &
+        sleep 10
+        
+        # Run Lighthouse CI
+        lhci autorun --config=.lighthouserc.js || true
+        
+        echo "✅ Performance simulation completed"
+        
+    - name: Security audit
+      run: |
+        echo "🔒 Running security audit..."
+        
+        # Audit dependencies
+        npm audit --audit-level=moderate
+        
+        # Check for known vulnerabilities
+        npx audit-ci --moderate
+        
+        echo "✅ Security audit completed"
+        
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: production-builds
+        path: |
+          dist-web/
+          dist-android/
+          dist-ios/
+          bundle-report.json
+          
+    - name: Upload performance report
+      uses: actions/upload-artifact@v3
+      with:
+        name: performance-report
+        path: .lighthouseci/

@@ -1,0 +1,222 @@
+{
+  "$schema": "https://tokens.studio/schema",
+  "$id": "design-system-tokens",
+  "name": "Design System Tokens",
+  "version": "1.0.0",
+  "tokens": {
+    "color": {
+      "primitive": {
+        "$type": "color",
+        "$description": "Base color palette for the design system",
+        "indigo": {
+          "50": { "value": "#EEF2FF", "type": "color", "description": "Light indigo" },
+          "100": { "value": "#E0E7FF", "type": "color", "description": "Very light indigo" },
+          "200": { "value": "#C7D2FE", "type": "color", "description": "Light indigo" },
+          "300": { "value": "#A5B4FC", "type": "color", "description": "Medium light indigo" },
+          "400": { "value": "#818CF8", "type": "color", "description": "Indigo" },
+          "500": { "value": "#6366F1", "type": "color", "description": "Medium indigo" },
+          "600": { "value": "#4F46E5", "type": "color", "description": "Indigo" },
+          "700": { "value": "#4338CA", "type": "color", "description": "Dark indigo" },
+          "800": { "value": "#3730A3", "type": "color", "description": "Dark indigo" },
+          "900": { "value": "#312E81", "type": "color", "description": "Very dark indigo" },
+          "950": { "value": "#1E1B4B", "type": "color", "description": "Darkest indigo" }
+        },
+        "violet": {
+          "50": { "value": "#F5F3FF", "type": "color", "description": "Light violet" },
+          "100": { "value": "#EDE9FE", "type": "color", "description": "Very light violet" },
+          "200": { "value": "#DDD6FE", "type": "color", "description": "Light violet" },
+          "300": { "value": "#C4B5FD", "type": "color", "description": "Medium light violet" },
+          "400": { "value": "#A78BFA", "type": "color", "description": "Violet" },
+          "500": { "value": "#8B5CF6", "type": "color", "description": "Medium violet" },
+          "600": { "value": "#7C3AED", "type": "color", "description": "Dark violet" },
+          "700": { "value": "#6D28D9", "type": "color", "description": "Dark violet" },
+          "800": { "value": "#5B21B6", "type": "color", "description": "Dark violet" },
+          "900": { "value": "#4C1D95", "type": "color", "description": "Very dark violet" },
+          "950": { "value": "#2E1065", "type": "color", "description": "Darkest violet" }
+        },
+        "cyan": {
+          "50": { "value": "#ECFEFF", "type": "color", "description": "Light cyan" },
+          "100": { "value": "#CFFAFE", "type": "color", "description": "Very light cyan" },
+          "200": { "value": "#A5F3FC", "type": "color", "description": "Light cyan" },
+          "300": { "value": "#67E8F9", "type": "color", "description": "Medium light cyan" },
+          "400": { "value": "#22D3EE", "type": "color", "description": "Cyan" },
+          "500": { "value": "#06B6D4", "type": "color", "description": "Medium cyan" },
+          "600": { "value": "#0891B2", "type": "color", "description": "Dark cyan" },
+          "700": { "value": "#0E7490", "type": "color", "description": "Dark cyan" },
+          "800": { "value": "#155E75", "type": "color", "description": "Dark cyan" },
+          "900": { "value": "#164E63", "type": "color", "description": "Very dark cyan" },
+          "950": { "value": "#083344", "type": "color", "description": "Darkest cyan" }
+        },
+        "emerald": {
+          "50": { "value": "#ECFDF5", "type": "color", "description": "Light emerald" },
+          "100": { "value": "#D1FAE5", "type": "color", "description": "Very light emerald" },
+          "200": { "value": "#A7F3D0", "type": "color", "description": "Light emerald" },
+          "300": { "value": "#6EE7B7", "type": "color", "description": "Medium light emerald" },
+          "400": { "value": "#34D399", "type": "color", "description": "Emerald" },
+          "500": { "value": "#10B981", "type": "color", "description": "Medium emerald" },
+          "600": { "value": "#059669", "type": "color", "description": "Dark emerald" },
+          "700": { "value": "#047857", "type": "color", "description": "Dark emerald" },
+          "800": { "value": "#065F46", "type": "color", "description": "Dark emerald" },
+          "900": { "value": "#064E3B", "type": "color", "description": "Very dark emerald" },
+          "950": { "value": "#022C22", "type": "color", "description": "Darkest emerald" }
+        },
+        "amber": {
+          "50": { "value": "#FFFBEB", "type": "color", "description": "Light amber" },
+          "100": { "value": "#FEF3C7", "type": "color", "description": "Very light amber" },
+          "200": { "value": "#FDE68A", "type": "color", "description": "Light amber" },
+          "300": { "value": "#FCD34D", "type": "color", "description": "Medium light amber" },
+          "400": { "value": "#FBBF24", "type": "color", "description": "Amber" },
+          "500": { "value": "#F59E0B", "type": "color", "description": "Medium amber" },
+          "600": { "value": "#D97706", "type": "color", "description": "Dark amber" },
+          "700": { "value": "#B45309", "type": "color", "description": "Dark amber" },
+          "800": { "value": "#92400E", "type": "color", "description": "Dark amber" },
+          "900": { "value": "#78350F", "type": "color", "description": "Very dark amber" },
+          "950": { "value": "#451A03", "type": "color", "description": "Darkest amber" }
+        },
+        "rose": {
+          "50": { "value": "#FFFBEE", "type": "color", "description": "Light rose" },
+          "100": { "value": "#FCE7F3", "type": "color", "description": "Very light rose" },
+          "200": { "value": "#FECACA", "type": "color", "description": "Light rose" },
+          "300": { "value": "#FCA5A5", "type": "color", "description": "Medium light rose" },
+          "400": { "value": "#FB7185", "type": "color", "description": "Rose" },
+          "500": { "value": "#F43F5E", "type": "color", "description": "Medium rose" },
+          "600": { "value": "#E11D48", "type": "color", "description": "Dark rose" },
+          "700": { "value": "#BE123C", "type": "color", "description": "Dark rose" },
+          "800": { "value": "#9F1239", "type": "color", "description": "Dark rose" },
+          "900": { "value": "#881337", "type": "color", "description": "Very dark rose" },
+          "950": { "value": "#4C0519", "type": "color", "description": "Darkest rose" }
+        },
+        "neutral": {
+          "0": { "value": "#FFFFFF", "type": "color", "description": "White" },
+          "50": { "value": "#F9FAFB", "type": "color", "description": "Very light neutral" },
+          "100": { "value": "#F3F4F6", "type": "color", "description": "Very light neutral" },
+          "200": { "value": "#E5E7EB", "type": "color", "description": "Light neutral" },
+          "300": { "value": "#D1D5DB", "type": "color", "description": "Light neutral" },
+          "400": { "value": "#9CA3AF", "type": "color", "description": "Neutral" },
+          "500": { "value": "#6B7280", "type": "color", "description": "Medium neutral" },
+          "600": { "value": "#4B5563", "type": "color", "description": "Dark neutral" },
+          "700": { "value": "#374151", "type": "color", "description": "Dark neutral" },
+          "800": { "value": "#1F2937", "type": "color", "description": "Dark neutral" },
+          "900": { "value": "#111827", "type": "color", "description": "Very dark neutral" },
+          "950": { "value": "#030712", "type": "color", "description": "Darkest neutral" }
+        }
+      },
+      "semantic": {
+        "$type": "color",
+        "$description": "Semantic color mappings for UI components",
+        "brand": {
+          "primary": { "value": "{color.primitive.indigo.600}", "type": "color", "description": "Primary brand color" },
+          "secondary": { "value": "{color.primitive.violet.600}", "type": "color", "description": "Secondary brand color" }
+        },
+        "status": {
+          "success": { "value": "{color.primitive.emerald.500}", "type": "color", "description": "Success state" },
+          "warning": { "value": "{color.primitive.amber.500}", "type": "color", "description": "Warning state" },
+          "error": { "value": "{color.primitive.rose.500}", "type": "color", "description": "Error state" },
+          "info": { "value": "{color.primitive.cyan.500}", "type": "color", "description": "Info state" }
+        },
+        "feedback": {
+          "positive": { "value": "{color.primitive.emerald.500}", "type": "color", "description": "Positive feedback" },
+          "negative": { "value": "{color.primitive.rose.500}", "type": "color", "description": "Negative feedback" }
+        }
+      }
+    },
+    "typography": {
+      "$type": "typography",
+      "$description": "Typography scale for the design system",
+      "fontFamily": {
+        "sans": { "value": ["Inter_400Regular", "Inter_500Medium", "Inter_600SemiBold", "Inter_700Bold"], "type": "fontFamily", "description": "Primary sans-serif font family" }
+      },
+      "fontSize": {
+        "xs": { "value": "11", "type": "fontSize", "description": "Extra small text" },
+        "sm": { "value": "13", "type": "fontSize", "description": "Small text" },
+        "md": { "value": "15", "type": "fontSize", "description": "Medium text" },
+        "lg": { "value": "17", "type": "fontSize", "description": "Large text" },
+        "xl": { "value": "20", "type": "fontSize", "description": "Extra large text" },
+        "2xl": { "value": "24", "type": "fontSize", "description": "2X large text" },
+        "3xl": { "value": "30", "type": "fontSize", "description": "3X large text" }
+      },
+      "fontWeight": {
+        "regular": { "value": "400", "type": "fontWeight", "description": "Regular font weight" },
+        "medium": { "value": "500", "type": "fontWeight", "description": "Medium font weight" },
+        "semibold": { "value": "600", "type": "fontWeight", "description": "Semibold font weight" },
+        "bold": { "value": "700", "type": "fontWeight", "description": "Bold font weight" }
+      },
+      "lineHeight": {
+        "tight": { "value": "1.25", "type": "lineHeight", "description": "Tight line height" },
+        "normal": { "value": "1.5", "type": "lineHeight", "description": "Normal line height" },
+        "relaxed": { "value": "1.75", "type": "lineHeight", "description": "Relaxed line height" }
+      }
+    },
+    "spacing": {
+      "$type": "spacing",
+      "$description": "Spacing scale for consistent layouts",
+      "scale": {
+        "0": { "value": "0", "type": "spacing", "description": "No spacing" },
+        "0.5": { "value": "2", "type": "spacing", "description": "Quarter spacing unit" },
+        "1": { "value": "4", "type": "spacing", "description": "Base spacing unit" },
+        "1.5": { "value": "6", "type": "spacing", "description": "One and a half spacing units" },
+        "2": { "value": "8", "type": "spacing", "description": "Double spacing units" },
+        "3": { "value": "12", "type": "spacing", "description": "Triple spacing units" },
+        "4": { "value": "16", "type": "spacing", "description": "Quadruple spacing units" },
+        "5": { "value": "20", "type": "spacing", "description": "Five spacing units" },
+        "6": { "value": "24", "type": "spacing", "description": "Six spacing units" },
+        "8": { "value": "32", "type": "spacing", "description": "Eight spacing units" },
+        "10": { "value": "40", "type": "spacing", "description": "Ten spacing units" },
+        "12": { "value": "48", "type": "spacing", "description": "Twelve spacing units" },
+        "16": { "value": "64", "type": "spacing", "description": "Sixteen spacing units" },
+        "20": { "value": "80", "type": "spacing", "description": "Twenty spacing units" },
+        "24": { "value": "96", "type": "spacing", "description": "Twenty-four spacing units" },
+        "32": { "value": "128", "type": "spacing", "description": "Thirty-two spacing units" }
+      }
+    },
+    "radii": {
+      "$type": "radii",
+      "$description": "Border radius scale for consistent corners",
+      "scale": {
+        "none": { "value": "0", "type": "radii", "description": "No border radius" },
+        "xs": { "value": "3", "type": "radii", "description": "Extra small border radius" },
+        "sm": { "value": "6", "type": "radii", "description": "Small border radius" },
+        "md": { "value": "10", "type": "radii", "description": "Medium border radius" },
+        "lg": { "value": "14", "type": "radii", "description": "Large border radius" },
+        "xl": { "value": "18", "type": "radii", "description": "Extra large border radius" },
+        "2xl": { "value": "24", "type": "radii", "description": "2X large border radius" },
+        "3xl": { "value": "32", "type": "radii", "description": "3X large border radius" },
+        "full": { "value": "9999", "type": "radii", "description": "Fully rounded" }
+      }
+    },
+    "motion": {
+      "$type": "motion",
+      "$description": "Animation and motion tokens for consistent interactions",
+      "duration": {
+        "instant": { "value": "50", "type": "duration", "description": "Instant animation" },
+        "fast": { "value": "150", "type": "duration", "description": "Fast animation" },
+        "normal": { "value": "300", "type": "duration", "description": "Normal animation" },
+        "slow": { "value": "500", "type": "duration", "description": "Slow animation" },
+        "slower": { "value": "750", "type": "duration", "description": "Slower animation" },
+        "glacial": { "value": "1200", "type": "duration", "description": "Very slow animation" }
+      },
+      "easing": {
+        "linear": { "value": "linear", "type": "easing", "description": "Linear easing function" },
+        "ease": { "value": "ease", "type": "easing", "description": "Ease easing function" },
+        "easeIn": { "value": "ease-in", "type": "easing", "description": "Ease-in easing function" },
+        "easeOut": { "value": "ease-out", "type": "easing", "description": "Ease-out easing function" },
+        "easeInOut": { "value": "ease-in-out", "type": "easing", "description": "Ease-in-out easing function" }
+      },
+      "spring": {
+        "gentle": {
+          "damping": { "value": "20", "type": "number", "description": "Gentle spring damping" },
+          "stiffness": { "value": "150", "type": "number", "description": "Gentle spring stiffness" }
+        },
+        "snappy": {
+          "damping": { "value": "30", "type": "number", "description": "Snappy spring damping" },
+          "stiffness": { "value": "300", "type": "number", "description": "Snappy spring stiffness" }
+        }
+      }
+    }
+  },
+  "global": {
+    "$type": "global",
+    "$description": "Global token settings",
+    "baseFontSize": { "value": "16", "type": "fontSize", "description": "Base font size for rem calculations" }
+  }
+}

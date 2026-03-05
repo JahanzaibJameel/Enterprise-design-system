@@ -1,0 +1,75 @@
+name: Visual Regression Testing
+
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+jobs:
+  visual-regression:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci --legacy-peer-deps
+      
+    - name: Start Storybook
+      run: |
+        npx storybook dev-server --port 6006 &
+        sleep 30
+        
+    - name: Take screenshots
+      run: |
+        npx storybook test --url http://localhost:6006 --reference-dir .storybook-reference --output-dir .storybook-screenshots
+        
+    - name: Compare screenshots
+      run: |
+        if [ -d ".storybook-reference" ]; then
+          echo "📸 Comparing screenshots..."
+          npx reg-cli compare .storybook-reference .storybook-screenshots -j visual-regression-report.json --html-report visual-regression-report.html
+          
+          # Check for visual differences
+          if [ -f "visual-regression-report.json" ]; then
+            DIFFERENCES=$(cat visual-regression-report.json | jq '.failedItems | length')
+            if [ "$DIFFERENCES" -gt 0 ]; then
+              echo "❌ Found $DIFFERENCES visual regression(s)"
+              echo "📊 Report available in visual-regression-report.html"
+              
+              # Upload report
+              uses: actions/upload-artifact@v3
+              with:
+                name: visual-regression-report
+                path: visual-regression-report.html
+              
+              exit 1
+            else
+              echo "✅ No visual regressions detected"
+            fi
+          else
+            echo "✅ No reference screenshots found - creating baseline"
+            mkdir -p .storybook-reference
+            cp -r .storybook-screenshots/* .storybook-reference/
+          fi
+        else
+          echo "✅ Creating baseline screenshots"
+          mkdir -p .storybook-reference
+          cp -r .storybook-screenshots/* .storybook-reference/
+        fi
+        
+    - name: Upload screenshots
+      uses: actions/upload-artifact@v3
+      with:
+        name: storybook-screenshots
+        path: .storybook-screenshots
