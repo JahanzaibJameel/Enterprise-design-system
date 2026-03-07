@@ -83,8 +83,8 @@ jobs:
         node scripts/generate-performance-report.mjs
         
     - name: Upload performance artifacts
-      uses: actions/upload-artifact@v3
-      with:
+uses: actions/upload-artifact@v4
+with:
         name: performance-reports
         path: |
           performance-*.json
