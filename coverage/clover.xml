@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1772654177148" clover="3.2.0">
-  <project timestamp="1772654177148" name="All files">
+<coverage generated="1772878293498" clover="3.2.0">
+  <project timestamp="1772878293499" name="All files">
     <metrics statements="335" coveredstatements="0" conditionals="245" coveredconditionals="0" methods="89" coveredmethods="0" elements="669" coveredelements="0" complexity="0" loc="335" ncloc="335" packages="4" files="24" classes="24"/>
     <package name="components">
       <metrics statements="259" coveredstatements="0" conditionals="194" coveredconditionals="0" methods="70" coveredmethods="0"/>
-      <file name="AIAssistant.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\AIAssistant.tsx">
+      <file name="AIAssistant.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\AIAssistant.tsx">
         <metrics statements="21" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
@@ -28,7 +28,7 @@
         <line num="99" count="0" type="stmt"/>
         <line num="112" count="0" type="stmt"/>
       </file>
-      <file name="ARPreview.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\ARPreview.tsx">
+      <file name="ARPreview.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\ARPreview.tsx">
         <metrics statements="21" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
@@ -52,7 +52,7 @@
         <line num="93" count="0" type="stmt"/>
         <line num="146" count="0" type="stmt"/>
       </file>
-      <file name="Avatar.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\Avatar.tsx">
+      <file name="Avatar.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\Avatar.tsx">
         <metrics statements="12" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="14" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
@@ -67,7 +67,7 @@
         <line num="67" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
       </file>
-      <file name="Badge.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\Badge.tsx">
+      <file name="Badge.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\Badge.tsx">
         <metrics statements="11" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
@@ -81,7 +81,7 @@
         <line num="61" count="0" type="stmt"/>
         <line num="65" count="0" type="stmt"/>
       </file>
-      <file name="Button.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\Button.tsx">
+      <file name="Button.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\Button.tsx">
         <metrics statements="23" coveredstatements="0" conditionals="23" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="34" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
@@ -107,7 +107,7 @@
         <line num="180" count="0" type="stmt"/>
         <line num="183" count="0" type="stmt"/>
       </file>
-      <file name="Card.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\Card.tsx">
+      <file name="Card.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\Card.tsx">
         <metrics statements="16" coveredstatements="0" conditionals="24" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="21" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
@@ -126,7 +126,7 @@
         <line num="125" count="0" type="stmt"/>
         <line num="132" count="0" type="stmt"/>
       </file>
-      <file name="GestureControl.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\GestureControl.tsx">
+      <file name="GestureControl.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\GestureControl.tsx">
         <metrics statements="30" coveredstatements="0" conditionals="18" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
@@ -159,7 +159,7 @@
         <line num="173" count="0" type="stmt"/>
         <line num="183" count="0" type="stmt"/>
       </file>
-      <file name="HapticFeedback.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\HapticFeedback.tsx">
+      <file name="HapticFeedback.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\HapticFeedback.tsx">
         <metrics statements="19" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
@@ -181,7 +181,7 @@
         <line num="64" count="0" type="stmt"/>
         <line num="73" count="0" type="stmt"/>
       </file>
-      <file name="Input.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\Input.tsx">
+      <file name="Input.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\Input.tsx">
         <metrics statements="21" coveredstatements="0" conditionals="30" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <line num="33" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
@@ -205,7 +205,7 @@
         <line num="151" count="0" type="stmt"/>
         <line num="158" count="0" type="stmt"/>
       </file>
-      <file name="NeuralDesign.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\NeuralDesign.tsx">
+      <file name="NeuralDesign.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\NeuralDesign.tsx">
         <metrics statements="27" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="11" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
@@ -235,7 +235,7 @@
         <line num="206" count="0" type="stmt"/>
         <line num="222" count="0" type="stmt"/>
       </file>
-      <file name="Skeleton.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\Skeleton.tsx">
+      <file name="Skeleton.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\Skeleton.tsx">
         <metrics statements="9" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
@@ -247,7 +247,7 @@
         <line num="56" count="0" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
       </file>
-      <file name="Toggle.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\Toggle.tsx">
+      <file name="Toggle.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\Toggle.tsx">
         <metrics statements="19" coveredstatements="0" conditionals="15" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
@@ -269,7 +269,7 @@
         <line num="76" count="0" type="stmt"/>
         <line num="84" count="0" type="stmt"/>
       </file>
-      <file name="VoiceCommand.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\components\VoiceCommand.tsx">
+      <file name="VoiceCommand.tsx" path="D:\PROJECT\Enterprise-design-system\src\components\VoiceCommand.tsx">
         <metrics statements="30" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <line num="12" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
@@ -305,7 +305,7 @@
     </package>
     <package name="motion">
       <metrics statements="29" coveredstatements="0" conditionals="23" coveredconditionals="0" methods="10" coveredmethods="0"/>
-      <file name="FadeIn.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\motion\FadeIn.tsx">
+      <file name="FadeIn.tsx" path="D:\PROJECT\Enterprise-design-system\src\motion\FadeIn.tsx">
         <metrics statements="9" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -317,7 +317,7 @@
         <line num="28" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
       </file>
-      <file name="ScalePress.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\motion\ScalePress.tsx">
+      <file name="ScalePress.tsx" path="D:\PROJECT\Enterprise-design-system\src\motion\ScalePress.tsx">
         <metrics statements="11" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <line num="18" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
@@ -331,7 +331,7 @@
         <line num="36" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
       </file>
-      <file name="SlideUp.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\motion\SlideUp.tsx">
+      <file name="SlideUp.tsx" path="D:\PROJECT\Enterprise-design-system\src\motion\SlideUp.tsx">
         <metrics statements="9" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="19" count="0" type="stmt"/>
         <line num="20" count="0" type="cond" truecount="0" falsecount="2"/>
@@ -346,7 +346,7 @@
     </package>
     <package name="theme">
       <metrics statements="34" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="8" coveredmethods="0"/>
-      <file name="ThemeContext.tsx" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\theme\ThemeContext.tsx">
+      <file name="ThemeContext.tsx" path="D:\PROJECT\Enterprise-design-system\src\theme\ThemeContext.tsx">
         <metrics statements="34" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <line num="16" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
@@ -386,33 +386,33 @@
     </package>
     <package name="tokens">
       <metrics statements="13" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="colors.ts" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\tokens\colors.ts">
+      <file name="colors.ts" path="D:\PROJECT\Enterprise-design-system\src\tokens\colors.ts">
         <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="73" count="0" type="stmt"/>
       </file>
-      <file name="index.ts" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\tokens\index.ts">
+      <file name="index.ts" path="D:\PROJECT\Enterprise-design-system\src\tokens\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
-      <file name="motion.ts" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\tokens\motion.ts">
+      <file name="motion.ts" path="D:\PROJECT\Enterprise-design-system\src\tokens\motion.ts">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
       </file>
-      <file name="radii.ts" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\tokens\radii.ts">
+      <file name="radii.ts" path="D:\PROJECT\Enterprise-design-system\src\tokens\radii.ts">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
       </file>
-      <file name="shadows.ts" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\tokens\shadows.ts">
+      <file name="shadows.ts" path="D:\PROJECT\Enterprise-design-system\src\tokens\shadows.ts">
         <metrics statements="1" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="9" count="0" type="stmt"/>
       </file>
-      <file name="spacing.ts" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\tokens\spacing.ts">
+      <file name="spacing.ts" path="D:\PROJECT\Enterprise-design-system\src\tokens\spacing.ts">
         <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
       </file>
-      <file name="typography.ts" path="D:\ReactNative\project\Design-Playground\Design-Playground\src\tokens\typography.ts">
+      <file name="typography.ts" path="D:\PROJECT\Enterprise-design-system\src\tokens\typography.ts">
         <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="9" count="0" type="stmt"/>

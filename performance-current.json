@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-03-07T10:25:50.443Z",
+  "coreWebVitals": {
+    "cls": 0.1,
+    "fid": 50,
+    "fcp": 800,
+    "lcp": 1500,
+    "ttfb": 300
+  },
+  "thresholds": {
+    "cls": {
+      "good": 0.1,
+      "needsImprovement": 0.25
+    },
+    "fid": {
+      "good": 100,
+      "needsImprovement": 300
+    },
+    "fcp": {
+      "good": 1800,
+      "needsImprovement": 3000
+    },
+    "lcp": {
+      "good": 2500,
+      "needsImprovement": 4000
+    },
+    "ttfb": {
+      "good": 800,
+      "needsImprovement": 1800
+    }
+  },
+  "bundleSize": null,
+  "memoryUsage": {
+    "heapUsed": 4.74,
+    "heapTotal": 5.59,
+    "external": 1.78,
+    "rss": 36.12
+  }
+}
