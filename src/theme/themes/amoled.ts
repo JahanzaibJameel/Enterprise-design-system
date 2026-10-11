@@ -8,14 +8,14 @@ export const amoledTheme: Theme = {
   isDark: true,
   colors: {
     background: {
-      primary: '#000000',
-      secondary: '#080808',
-      tertiary: '#111111',
-      inverse: '#FFFFFF',
+      primary: primitive.neutral[1000],
+      secondary: primitive.neutral[900],
+      tertiary: primitive.neutral[800],
+      inverse: primitive.neutral[0],
     },
     surface: {
-      primary: '#0C0C0C',
-      secondary: '#141414',
+      primary: primitive.neutral[900],
+      secondary: primitive.neutral[800],
       overlay: 'rgba(0,0,0,0.95)',
     },
     border: {
@@ -25,10 +25,10 @@ export const amoledTheme: Theme = {
       brand: primitive.indigo[500],
     },
     text: {
-      primary: '#FFFFFF',
+      primary: primitive.neutral[0],
       secondary: 'rgba(255,255,255,0.55)',
       tertiary: 'rgba(255,255,255,0.25)',
-      inverse: '#000000',
+      inverse: primitive.neutral[1000],
       brand: primitive.indigo[400],
     },
     brand: {
