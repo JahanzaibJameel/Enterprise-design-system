@@ -1,6 +1,6 @@
 # Design Tokens Documentation
 
-> Auto-generated on 2026-03-05T06:56:28.846Z
+> Auto-generated on 2026-10-10T17:09:17.856Z
 
 ## Overview
 
