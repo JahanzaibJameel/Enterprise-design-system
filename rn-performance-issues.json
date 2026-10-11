@@ -1,0 +1,12 @@
+[
+  {
+    "type": "Component Complexity",
+    "count": 14,
+    "recommendation": "Consider breaking down complex components"
+  },
+  {
+    "type": "Memory Leaks",
+    "count": 4,
+    "recommendation": "Ensure proper cleanup in useEffect"
+  }
+]
