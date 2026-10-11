@@ -298,5 +298,5 @@ export interface Theme {
       disabledText: string;
     };
   };
-  shadows: Record<string, any>;
+  shadows: Record<string, unknown>;
 }
