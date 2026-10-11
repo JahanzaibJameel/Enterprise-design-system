@@ -40,7 +40,7 @@ A world-class React Native design system with enterprise-grade governance, compr
 ```bash
 # Clone the repository
 git clone https://github.com/JahanzaibJameel/Enterprise-design-system.git
-cd design-playground
+cd Enterprise-design-system
 
 # Install dependencies
 npm install --legacy-peer-deps
