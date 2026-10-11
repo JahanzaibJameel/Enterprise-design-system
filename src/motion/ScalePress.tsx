@@ -4,8 +4,8 @@ import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withSpring,
-} from 'react-native-reanimated';
-import { useReducedMotion } from 'react-native-reanimated';
+ useReducedMotion } from 'react-native-reanimated';
+
 import { spring } from '../tokens';
 
 interface ScalePressProps {
