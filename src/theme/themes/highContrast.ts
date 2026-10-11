@@ -1,33 +1,32 @@
-import { createShadows } from '../../tokens/shadows';
-import type { Theme } from './light';
+﻿import { primitive } from "../../tokens/colors";
+import { createShadows } from "../../tokens/shadows";
 
-export const highContrastTheme: Theme = {
-  id: 'highContrast' as const,
+import type { Theme } from './light';\r\n\r\nexport const highContrastTheme: Theme = {\r\n  id: 'highContrast' as const,
   name: 'High Contrast',
   isDark: false,
   colors: {
     background: {
-      primary: '#FFFFFF',
+      primary: primitive.neutral[0],
       secondary: '#F0F0F0',
       tertiary: '#E0E0E0',
-      inverse: '#000000',
+      inverse: primitive.neutral[1000],
     },
     surface: {
-      primary: '#FFFFFF',
+      primary: primitive.neutral[0],
       secondary: '#F0F0F0',
       overlay: 'rgba(255,255,255,0.98)',
     },
     border: {
       primary: 'rgba(0,0,0,0.6)',
       secondary: 'rgba(0,0,0,0.4)',
-      strong: '#000000',
+      strong: primitive.neutral[1000],
       brand: '#0000CC',
     },
     text: {
-      primary: '#000000',
+      primary: primitive.neutral[1000],
       secondary: '#333333',
       tertiary: '#555555',
-      inverse: '#FFFFFF',
+      inverse: primitive.neutral[0],
       brand: '#0000CC',
     },
     brand: {
