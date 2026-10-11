@@ -7,14 +7,14 @@ export const lightTheme = {
   isDark: false,
   colors: {
     background: {
-      primary: '#FFFFFF',
-      secondary: '#F5F5FA',
-      tertiary: '#EBEBF2',
-      inverse: '#0A0A0F',
+      primary: primitive.neutral[0],
+      secondary: primitive.neutral[50],
+      tertiary: primitive.neutral[100],
+      inverse: primitive.neutral[950],
     },
     surface: {
-      primary: '#FFFFFF',
-      secondary: '#F5F5FA',
+      primary: primitive.neutral[0],
+      secondary: primitive.neutral[50],
       overlay: 'rgba(255,255,255,0.85)',
     },
     border: {
@@ -24,10 +24,10 @@ export const lightTheme = {
       brand: primitive.indigo[500],
     },
     text: {
-      primary: '#0A0A0F',
+      primary: primitive.neutral[950],
       secondary: 'rgba(10,10,15,0.6)',
       tertiary: 'rgba(10,10,15,0.35)',
-      inverse: '#FFFFFF',
+      inverse: primitive.neutral[0],
       brand: primitive.indigo[600],
     },
     brand: {
