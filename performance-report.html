@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .header { background: #f5f5f5; padding: 20px; border-radius: 5px; margin-bottom: 20px; }
+        .status-ok { color: #28a745; }
+        .status-warning { color: #ffc107; }
+        .status-failed { color: #dc3545; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .metric-card { background: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #007bff; }
+        .score { font-size: 2em; font-weight: bold; text-align: center; margin: 20px 0; }
+        .warnings, .errors { margin: 10px 0; }
+        .warning-item { color: #856404; background: #fff3cd; padding: 5px; margin: 2px 0; }
+        .error-item { color: #721c24; background: #f8d7da; padding: 5px; margin: 2px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Performance Report</h1>
+        <p>Generated: 10/11/2026, 9:59:27 AM</p>
+        <div class="score status-ok">
+            Score: 100/100
+        </div>
+        <p>Status: <span class="status-ok">OK</span></p>
+    </div>
+
+    
+
+    
+
+    <div class="metrics">
+        <div class="metric-card">
+            <h3>Bundle Metrics</h3>
+            <p>Total Size: 244.14 KB</p>
+            <p>Gzipped: 63.48 KB</p>
+            <p>Bundle Count: 1</p>
+        </div>
+        
+        <div class="metric-card">
+            <h3>Memory Metrics</h3>
+            <p>Heap Used: 52.92 MB</p>
+            <p>Heap Total: 122.40 MB</p>
+            <p>RSS: 107.84 MB</p>
+        </div>
+        
+        <div class="metric-card">
+            <h3>Web Vitals</h3>
+            <p>FCP: 800 ms</p>
+            <p>LCP: 1500 ms</p>
+            <p>CLS: 0.1</p>
+            <p>FID: 50 ms</p>
+            <p>TTI: 1200 ms</p>
+        </div>
+    </div>
+</body>
+</html>
