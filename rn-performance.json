@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-10-11T04:58:53.573Z",
+  "componentPerformance": [
+    {
+      "name": "AIAssistant",
+      "lines": 177,
+      "hooks": 13,
+      "effects": 2,
+      "states": 3,
+      "complexity": 34
+    },
+    {
+      "name": "ARPreview",
+      "lines": 249,
+      "hooks": 13,
+      "effects": 2,
+      "states": 3,
+      "complexity": 45.5
+    },
+    {
+      "name": "Avatar",
+      "lines": 80,
+      "hooks": 2,
+      "effects": 0,
+      "states": 0,
+      "complexity": 12
+    },
+    {
+      "name": "Badge",
+      "lines": 97,
+      "hooks": 3,
+      "effects": 0,
+      "states": 0,
+      "complexity": 22
+    },
+    {
+      "name": "Button.stories",
+      "lines": 114,
+      "hooks": 0,
+      "effects": 0,
+      "states": 0,
+      "complexity": 17
+    },
+    {
+      "name": "Button",
+      "lines": 202,
+      "hooks": 11,
+      "effects": 0,
+      "states": 0,
+      "complexity": 32.5
+    },
+    {
+      "name": "Card",
+      "lines": 157,
+      "hooks": 3,
+      "effects": 0,
+      "states": 0,
+      "complexity": 30.5
+    },
+    {
+      "name": "GestureControl",
+      "lines": 269,
+      "hooks": 11,
+      "effects": 0,
+      "states": 3,
+      "complexity": 49
+    },
+    {
+      "name": "HapticFeedback",
+      "lines": 78,
+      "hooks": 12,
+      "effects": 0,
+      "states": 2,
+      "complexity": 14
+    },
+    {
+      "name": "Input",
+      "lines": 198,
+      "hooks": 11,
+      "effects": 0,
+      "states": 2,
+      "complexity": 37.5
+    },
+    {
+      "name": "NeuralDesign",
+      "lines": 357,
+      "hooks": 13,
+      "effects": 2,
+      "states": 5,
+      "complexity": 62
+    },
+    {
+      "name": "Skeleton",
+      "lines": 93,
+      "hooks": 9,
+      "effects": 2,
+      "states": 0,
+      "complexity": 18
+    },
+    {
+      "name": "Toggle",
+      "lines": 99,
+      "hooks": 10,
+      "effects": 1,
+      "states": 0,
+      "complexity": 17.5
+    },
+    {
+      "name": "VoiceCommand",
+      "lines": 182,
+      "hooks": 15,
+      "effects": 2,
+      "states": 4,
+      "complexity": 30
+    }
+  ],
+  "renderPerformance": {
+    "reRenders": {
+      "componentsAtRisk": 14,
+      "recommendation": "Consider memoizing components"
+    },
+    "stateUpdates": {
+      "totalStateUpdates": 46,
+      "averagePerComponent": 4.6
+    },
+    "propDrilling": {
+      "score": 115,
+      "recommendation": "Consider using context or state management"
+    },
+    "memoization": {
+      "memoizedComponents": 7,
+      "totalComponents": 14,
+      "percentage": 50
+    }
+  },
+  "memoryLeaks": {
+    "eventListeners": {
+      "added": 0,
+      "removed": 0,
+      "leaks": 0
+    },
+    "timers": {
+      "set": 5,
+      "cleared": 1,
+      "leaks": 4
+    },
+    "subscriptions": {
+      "created": 0,
+      "cleaned": 0,
+      "leaks": 0
+    }
+  },
+  "animationPerformance": {
+    "reanimatedComponents": 17,
+    "gestureHandlers": 0,
+    "performanceIssues": []
+  }
+}
