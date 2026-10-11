@@ -4,8 +4,8 @@ import Animated, {
   useAnimatedStyle,
   withTiming,
   withDelay,
-} from 'react-native-reanimated';
-import { useReducedMotion } from 'react-native-reanimated';
+ useReducedMotion } from 'react-native-reanimated';
+
 
 interface FadeInProps {
   children: ReactNode;
