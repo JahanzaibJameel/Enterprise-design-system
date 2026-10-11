@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-10-11T04:59:27.725Z",
+  "summary": {
+    "status": "ok",
+    "score": 100,
+    "warnings": [],
+    "errors": []
+  },
+  "metrics": {
+    "bundle": {
+      "totalSize": 250000,
+      "totalGzipped": 65000,
+      "bundleCount": 1
+    },
+    "memory": {
+      "heapUsed": 55495725,
+      "heapTotal": 128343001,
+      "external": 9701770,
+      "rss": 113076574
+    },
+    "webVitals": {
+      "firstContentfulPaint": 800,
+      "largestContentfulPaint": 1500,
+      "cumulativeLayoutShift": 0.1,
+      "firstInputDelay": 50,
+      "timeToInteractive": 1200
+    }
+  }
+}
