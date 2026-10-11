@@ -8,14 +8,14 @@ export const darkTheme: Theme = {
   isDark: true,
   colors: {
     background: {
-      primary: '#0D0D14',
-      secondary: '#13131E',
-      tertiary: '#1A1A28',
-      inverse: '#F5F5FA',
+      primary: primitive.neutral[950],
+      secondary: primitive.neutral[900],
+      tertiary: primitive.neutral[800],
+      inverse: primitive.neutral[50],
     },
     surface: {
-      primary: '#13131E',
-      secondary: '#1A1A28',
+      primary: primitive.neutral[900],
+      secondary: primitive.neutral[800],
       overlay: 'rgba(13,13,20,0.9)',
     },
     border: {
@@ -25,10 +25,10 @@ export const darkTheme: Theme = {
       brand: primitive.indigo[400],
     },
     text: {
-      primary: '#F0F0FA',
+      primary: primitive.neutral[100],
       secondary: 'rgba(240,240,250,0.6)',
       tertiary: 'rgba(240,240,250,0.3)',
-      inverse: '#0A0A0F',
+      inverse: primitive.neutral[950],
       brand: primitive.indigo[400],
     },
     brand: {
